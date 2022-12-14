@@ -1,0 +1,160 @@
+/*Schrift wird definiert*/
+@import url("https//fonts.gogleapis.com/css2?family=Montserrat&display=swap");
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*allg. Einstellungen für die Seite*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Hintergrund*/
+.header{
+    background: url("aino_meena.jpg") no-repeat center/cover;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/*Styling für navbar*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70px;
+    background-color: darkslategrey;
+    width: 100%;
+}
+
+.logo{
+    color: gold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2.8rem;
+    text-shadow: 0 0 10px black;
+    /*Hintergrund Farbe und Ausrichtung*/
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 10%;
+    margin-left: 46%;
+    padding: 10px;
+    margin-top: 18%;
+    border-radius: 10%;
+}
+
+
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.nav-links{
+    margin-right: 10px;
+}
+
+.nav-links a{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links a:hover{
+    background-color: chocolate;
+    padding: 7px 13px;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+/*Style für Burger-menü*/
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+  width: 27px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+/*Nachschauen für was das hier ist*//*
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+*/
+
+/*Wenn man den Display auf 768px zieht, dann passiert das:*/
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: -10px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(47, 79, 79, 0.980);
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+
+    .logo{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+}
+
+.nav-active{
+    transform: translate(0%);
+}
+/*Für die Animation*/
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translate(50px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+/*Animation für die drei Striche = Burger*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+
+}
+/*Ende von nav-Menü*/
+
+/*Responsiv für die anderen Displays mit @media(Based-Chat)*/
