@@ -18,7 +18,7 @@ html{
 
 /*Hintergrund*/
 .header{
-    background: url("aino_meena.jpg") no-repeat center/cover;
+    background: url("https://wallpapercave.com/wp/QChiAfN.jpg") no-repeat center/cover;
     object-fit: cover;
     height: 100vh;
     width: 100%;
@@ -32,23 +32,26 @@ nav{
     min-height: 70px;
     background-color: darkslategrey;
     width: 100%;
+    position: fixed;
 }
 
 .logo{
-    color: gold;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     text-shadow: 0 0 10px black;
     /*Hintergrund Farbe und Ausrichtung*/
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 10%;
-    margin-left: 46%;
+    width: 550px;
     padding: 10px;
-    margin-top: 18%;
-    border-radius: 10%;
+    border-radius: 20px;
+    margin-left: 35.7%;
 }
 
+.kandahar{
+   margin-top: 430px;
+
+}
 
 
 .nav-links{
@@ -65,14 +68,25 @@ nav{
     color: white;
     letter-spacing: 1px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .nav-links a:hover{
-    background-color: chocolate;
+    background-color: rgb(146, 144, 144);
     padding: 7px 13px;
     border-radius: 5px;
     transition: .3s ease;
+}
+
+/*Style für section-title*/
+.section-title{
+    font-size: 6rem;
+    font-weight: 500;
+    color: green;
+    margin: 0 10px 10px 10px;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 /*Style für Burger-menü*/
@@ -88,13 +102,7 @@ nav{
   margin: 5px;
   transition: all 0.3s ease;
 }
-/*Nachschauen für was das hier ist*//*
-@media screen and (max-width:1024px){
-    .nav-links{
-        width: 60%;
-    }
-}
-*/
+
 
 /*Wenn man den Display auf 768px zieht, dann passiert das:*/
 @media screen and (max-width:768px){
@@ -106,7 +114,7 @@ nav{
         position: absolute;
         right: -10px;
         height: 92vh;
-        top: 8vh;
+        top: 7vh;
         background-color: rgba(47, 79, 79, 0.980);
         display: flex;
         flex-direction: column;
@@ -120,12 +128,9 @@ nav{
     .nav-links li{
         opacity: 0;
     }
+    
     .burger{
         display: block;
-    }
-
-    .logo{
-        background-color: rgba(0, 0, 0, 0.9);
     }
 }
 
@@ -155,6 +160,13 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 
 }
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
 /*Ende von nav-Menü*/
 
-/*Responsiv für die anderen Displays mit @media(Based-Chat)*/
+/*Responsiv für die anderen Displays mit @media(Based-Chat)*
