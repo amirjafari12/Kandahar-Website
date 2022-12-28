@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +9,17 @@
 </head>
 <body>
   <!--Nav Menü-->
-  <section class="header"><!--Secrtion Home-->
+  <section class="header" id="Home"><!--Secrtion Home-->
     <nav> <!--Für Nav-Bar -->
+
+      <a href="#Home"><div class="logo_1"><abbr title="Kandahar">Kandahar</abbr></div></a>
         <ul class="nav-links">
-          <li><a href="Website.html">Home</a></li>
+          <li><a href="#Home">Home</a></li>
           <li><a href="#About">About</a></li>
           <li><a href="#History">History</a></li>
           <li><a href="#Sights">Sights</a></li>
         </ul>
+
         <!--Burger Menü-->
         <div class="burger">
           <div class="line1"></div>
@@ -25,22 +28,171 @@
         </div>
     </nav>
 
-    <div class="logo"><h1 class="kandahar">Kandahar</h1></div>
+    <div class="image"></div>
     <script src="Website.js"></script>
   </section>
 
-  <section id="About"><!--Section für About-->
-    <div class="komplett-thema">
+  <hr id="About">
 
-        <h1 class="section-title">About</h1>
-        <ul class="list-thema">
-            <li><b>Einwohner</b> &nbsp; 506.794</li><!--&nbsp ist für den Abstand zwischen Einwohner und Daten-->
-            <li><b>Fläche</b></li>
-            <li><b>Provinz</b></li>
-            <li><b>Klima</b></li>
-            <li><b>Wortherkunft</b></li>
-        </ul>
+  <section  class="section_1" id="Über"><!--Section für About-->
+    <div class="thema_about">
+      
+      <h1 class="section-title">About</h1>
+
+      <div class="about-infos">
+
+        <div class="ul-thema">
+          <h2 class="section_1-Überschrift">Infos</h2>
+          <ul class="list-thema">
+            <li><b>Einwohner:</b> &nbsp; 506.794</li><!--&nbsp ist für den Abstand zwischen Einwohner und Daten-->
+            <li><b>Fläche:</b>&nbsp; 273.4 km²/ größte Stadt in Afghanistan nach Kabul</li>
+            <li><b>Provinz:</b>&nbsp; Kandahar - Verwaltungssitz der gleichnamigen Provinz Kandahar</li>
+            <li><b>Infrastruktur</b>&nbsp; Kandahar it durch den Flughafen in der Stadt mit der Welt verbunden. Dieser liegt 20km südöstlich an der Straße nach Quetta. 
+              Außerdem ist die Stadt Kandahar mit dem sogenannten <a href="https://de.wikipedia.org/wiki/Ring_Road_(Afghanistan)" class="link-color"><b>ring road</b></a> mit Kabul und Herat verbunden.</li>
+            <li><b>Lage:</b>&nbsp; Liegt südlich des landes am Fluss <a href="https://de.wikipedia.org/wiki/Arghand%C4%81b" class="link-color"><b>Arghandab</b></a></li>
+          </ul>
+        </div>
+
+        <div class="klima">
+          <h2 class="section_1-Überschrift">Klima</h2>
+          <p>Das Klima ist arid, Kontinental Klima, geringen Niederschlag, variation zwischen Sommer-
+          und Wintertemperaturen.<br> Sommer beginnt mitte Mai bis ende September. Höhepunkt in Juli mit 
+          Durchscnittstemperaturen von 31°C.<br> Herbst beginnt Anfang Oktober bis ende November mit 
+          Durchscnittstemperaturen von 18°-12°C.<br> Der Winter beginnt im Dezember und endet Anfang März 
+          mit Durchschnittstemperatren von 6°-8°C.<br> Der Frühling beginnt Mitte März und endet im April 
+          mit Durchschnittstemperatren von 14°20°C.</p>
+        </div>
+
+        <div class="wortherkunft">  
+          <h2 class="section_1-Überschrift">Wortherkunft</h2>
+            <p>Möglicher Ursprung des Wortes Kandahar sind das antike Reich Ghandhara oder der Name einer
+            indo-germanischen Stadt namens Gondophereia, deren Existenz nicht  sicher ist.</p>
+        </div>
+
+      </div>   
+
     </div>
   </section>
+
+  <hr id="History">
+
+  <section class="section_2" id="Historie"><!--Section für Historie-->
+    <div class="thema_historie">
+
+      <h1 class="section-title">History</h1>
+
+      <div class="history-infos">
+        <!--Der Text für die Geschichte-->
+        <h2 class="history_h2">Antike</h2>
+        <p>Alexander der Große ist der Grund warum diese Stadt existiert, denn er hat Kandahar im 4. Jahrhundert vor Chr. in der Näher der Stadt Mundigak gegründet.</p>
+
+        <h2 class="history_h2">Mittelalter</h2>
+        <p>Da diese Stadt ihre Lage in Zentralasien hat, war sie opfer von vielen Erorberungen. Zuerst von den Arabern im 7. Jahrhundert,
+          dann von den turkstämmigen Ghaznawiden im 10. jahrhundert. Danach wurde sie von den Mongolen unter dem legendären General 
+          und Herrscher Dschingis Khan im 12. Jahhundert. 1383 erorberte sie der islamische Militäerführer Timur. Schließlich nahm 
+          er indische Herrscher Babur Kandahar im 16. Jahrhundert ein.
+        </p>
+
+        <h2 class="history_h2">Frühneuzeit</h2>
+        <p>Kandahar wurde 1747 unter Ahmad Schah Durrani, der Herrscher des Durrani-Dynastie, dem vorläufer des afghanischen Staates, zu Hauptstadt geklärt.
+          1780 wurde Kabul zu Hauptstadt geklärt.
+        </p>
+
+        <h2 class="history_h2">Neuzeit</h2>
+        <p>Zu Beginn der Ersten Anglo-Afghanischen Kriegen (1839-1842) besetzten britischen Truppen Kandahar. Danach zogen sie sich im jahr 1842 zurück und kehrten
+          zusammen mit indischen Truppen im Zweiten Anglo-Afghanischen Krieg 1878 zurück.<br> Die britischen Truppen kämpften gegen Ayub Khan und verlierten den Krieg 1881
+          in der Schlacht von Maiwand. 
+          Danach verlief das Leben in Kandahar sehr friedlich, bis 1929 Hasbibullah Kalakani die Stadt belagerte und die Bevölkerung drangsalierte, bis er von Mohammed Nadir
+          Schah vertrieben wurde.<br>
+          Die Taliban erorbeten 1994 Kandahar, welches am 7. Dezember 2001 von der Nordallianz mit US-amerikanischen Unterstützung befreit wurde.
+          Jedoch wurde sie wieder am 12. August 2021 im Zuge der offensive nach dem Abzug der US-amerikanischen Truppen aus Afghanistan zurückerobert.
+        </p>   
+      </div>
+
+
+      <div class="Bild_gesamt">
+        <div class="Bild_gesamt_1">
+          <img src="Ruinen_Kandahar.jpg" alt="Ruinen der Zitadelle Kandahar">
+          <figcaption>Ruinen der Zitadelle von Kandahar</figcaption>
+        </div>
+        
+        <div class="Bild_gesamt_2">
+          <img src="Tafel.jpg" alt="Irgendetwas">
+          <figcaption class="figcaption_gesamt2">Bilinguale Edikte aus Ashuka</figcaption>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr id="Sights">
+
+  <section class="section_3" id="Sehenswürdigkeiten"><!--Section für Sights-->
+    <div class="thema_sights">
+
+      <h1 class="section-title">Sights</h1>
+
+      <div class="sgs1">
+        <div class="img_sgs1"> <!--sighst=sgs-->
+          <img src="Kandahar_Flughafen.jpg" alt="Flughafen von Kandahar">
+        </div>
+
+        <div class="sgs1_txt">
+          <p>Der Flughafen von Kandahar, IATA: KDH, wird sowohl vom Militär als auch von der zivilen Bevälkerung genutzt.
+            Sein Lage ist 16.7km südöstlich von Kandahar. Dieser Flughafen wurde 2015 von der Taliban angegriffen, 
+            weiterhin haben sie den Flughafen am 1. August 2021 nach dem Ende der Resolute-Support-Mission mit drei Raketen angegriffen.
+          </p>
+        </div>
+      </div>
+
+      <div class="sgs2">
+        <div class="img_sgs2">
+          <img src="Mausoleum von Mirwais Khan.jpg" alt="Mausoleum von Mirwais Khan">
+        </div>
+
+        <div class="sgs2_txt">
+          <p>Dies ist das Mausleum von dem afghanischen Herrscher und Gründer der Hotak-Dynastie.
+            Er gilt in ganz Afghanistan als Held. Der Autor Steven Otfinoski bezeichnet ihn in einer seiner Bücher als Afghanistans Georg Washington.
+            Der Mausoleom von Mirwais Khan befindet sich om Kokaran-Abschnittt von Kandahar.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+   <!-- Footer Section -->
+  <section id="footer">
+    <div class="footer container">
+        <div class="brand"><h1>Amir Jafari</h1></div>
+        <h2>My Social Media Accounts</h2>
+
+        <!-- Social Media links -->
+        <div class="social-icon">
+          <!-- Instagram -->
+          <div class="social-item">
+              <a href="https://www.instagram.com/amirjf.47/"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+          </div>
+
+          <!-- Github -->
+          <div class="social-item">
+              <a href="https://github.com/amirjafari12"><img src="https://img.icons8.com/ios-glyphs/60/000000/github.png" class="github"/></a>
+          </div>
+
+          <!-- TikTok -->
+          <div class="social-item">
+            <a href="https://www.tiktok.com/@ghostrider_866"><img src="https://img.icons8.com/color/48/000000/tiktok--v1.png"/></a>
+          </div>
+        </div>
+        <!-- Ende von den Social Media links -->
+      <p>Copyright © 2022 Jafari. All rights reserved</p>
+    </div>
+  </section>
+  <!-- Ende von der Footer Section -->
+
+  
+ 
+ 
+
 </body>
 </html>
