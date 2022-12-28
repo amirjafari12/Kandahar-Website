@@ -5,8 +5,11 @@ body{
 }
 
 html{
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+
 /*allg. Einstellungen für die Seite*/
 *{
     margin: 0;
@@ -16,12 +19,32 @@ html{
     list-style: none;
 }
 
+/*Ausrichtung für die Scrollgrenze*/
+hr{
+    color: black;
+    width: 80%;
+    margin: 5px 0 90px 5%;
+}
+
+/*Styling Section 1(von Oben nach unten)*/
 /*Hintergrund*/
-.header{
-    background: url("https://wallpapercave.com/wp/QChiAfN.jpg") no-repeat center/cover;
+.image{
+    background: url("aino_meena.jpg") no-repeat center/cover;
     object-fit: cover;
     height: 100vh;
     width: 100%;
+}
+
+
+
+/*styling für logo auf dem Display*/
+/*logo in dem Navbar*/
+.logo_1{
+    color: gold;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px black;
+   
 }
 
 /*Styling für navbar*/
@@ -30,45 +53,23 @@ nav{
     justify-content: space-around;
     align-items: center;
     min-height: 70px;
-    background-color: darkslategrey;
+    background-color: rgb(47, 79, 79);
     width: 100%;
     position: fixed;
 }
 
-.logo{
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 3.5rem;
-    text-shadow: 0 0 10px black;
-    /*Hintergrund Farbe und Ausrichtung*/
-    width: 550px;
-    padding: 10px;
-    border-radius: 20px;
-    margin-left: 35.7%;
-}
-
-.kandahar{
-   margin-top: 430px;
-
-}
-
-
+/*Ausrichtung und Farbe vom Nav-Bar*/
 .nav-links{
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
 
-.nav-links{
-    margin-right: 10px;
-}
-
 .nav-links a{
     color: white;
     letter-spacing: 1px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .nav-links a:hover{
@@ -82,7 +83,7 @@ nav{
 .section-title{
     font-size: 6rem;
     font-weight: 500;
-    color: green;
+    color: rgb(107, 107, 107);
     margin: 0 10px 10px 10px;
     text-align: center;
     align-items: center;
@@ -104,39 +105,117 @@ nav{
 }
 
 
-/*Wenn man den Display auf 768px zieht, dann passiert das:*/
-@media screen and (max-width:768px){
+/*Wenn man den Display bis zu 768px zieht, dann passiert das:*/
+@media only screen and (max-width:768px){
     body{
         overflow-x: hidden;
     }
 
     .nav-links{
         position: absolute;
-        right: -10px;
-        height: 92vh;
-        top: 7vh;
+        right: 0px;
+        height: 100vh;
+        top: 15px;
         background-color: rgba(47, 79, 79, 0.980);
         display: flex;
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        width: 100%;
+        width: 50%;
         transform: translate(100%);
         transition: transform 0.5s ease-in;
 
     }
+
     .nav-links li{
         opacity: 0;
     }
-    
+
     .burger{
         display: block;
     }
+
+    /*Größe von section-title*/
+    .section-title{
+        font-size: 4rem;
+    }
+
+    /*Ausrichtung von Kandahar*/
+    .kandahar{
+        margin-left: 130px;
+    }
+
+    /*Ausrichtung von Kandahar persisch*/
+    .logo_1{
+        padding-left: 100px;
+    }
+
+    /*Styling und Ausrichtung von Bild_gesamt*/    
+    .Bild_gesamt{
+        flex-direction: column;
+        margin-right: 6%;
+        margin-left: 5%;
+    } 
+
+    .Bild_gesamt_1 img{
+        width: 100%;
+    }
+
+    .Bild_gesamt_2 img{
+        margin-left: 1.5%;
+        width: 90%;
+    }
+
+    .figcaption_gesamt2{
+        margin-left: 30px;
+    }
+    /*Ende styling Bild-gesamt*/
+
+    /*Anfang styling von Sights*/
+
 }
 
+@media only screen and (max-width:600px){
+
+    .logo_1{
+        padding-left: 80px;
+    }
+}
+
+@media only screen and (max-width:675px){
+    .img_sgs1 img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:850px){
+    
+    body{
+        overflow-x: hidden;
+    }
+    
+    /*Ausrichtung von About infos*/
+    .about-infos{
+        flex-direction: column;
+        width: 270%;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .nav-links{
+        width: 100%;
+    }
+
+    .Bild_gesamt{
+        flex-direction: column;
+    }
+}
+
+/*Bürger Animation und Asurichtung*/
 .nav-active{
     transform: translate(0%);
 }
+
 /*Für die Animation*/
 @keyframes navLinkFade{
     from{
@@ -149,6 +228,7 @@ nav{
         transform: translate(0px);
     }
 }
+
 /*Animation für die drei Striche = Burger*/
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px,6px);
@@ -160,13 +240,236 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 
 }
+/*Ende von nav-Menü*/
+/*Ende Styling Section 1(von Oben nach unten)*/
 
-@media screen and (max-width:1024px){
-    .nav-links{
-        width: 60%;
-    }
+
+
+
+/*Sytling für den zweiten Section*/
+/*Hintergrund und Ausrichtung vom zweiten Section*/
+.thema_about, .thema_historie, .thema_sights {
+    margin-top: -97px;
+    background-color: bisque;
 }
 
-/*Ende von nav-Menü*/
+.section-title{
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
 
-/*Responsiv für die anderen Displays mit @media(Based-Chat)*
+/*Ausrichtung der Unterschriften (alle h2)*/
+.section_1-Überschrift{
+    color: rgb(252, 252, 252);
+    margin-bottom: 15px;
+}
+
+/*Bild Ausichtung*/
+.bild-1{
+    display: grid;
+    place-items: center;
+}
+
+.section_1 img{
+    border-radius: 30px;
+}
+
+/*Die Ausrichtung von den Divs(Infos/Klima/Wortherkunft)*/
+.about-infos{
+    display: flex;
+    margin: 0 5% 0 4%;
+}
+
+/*Für die allg. Daten*/
+.ul-thema,.klima, .wortherkunft{
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+/*Styling für den Div Infos*/
+.ul-thema{
+    background-color: coral;
+    margin: 20px 0 0 10px;
+    width: 33%;
+}
+
+.list-thema li{
+    padding: 2px 0 19px 0;
+}
+
+/*Für den abstand zwischen den Zeilen von den divs klima und wortherkunft*/
+.klima, .wortherkunft{
+    line-height: 30px;
+}
+
+/*Styling für den Div Klima*/
+.klima{
+    background-color: coral;
+    margin: 20px 0 0 10px;
+    width: 33%;
+}
+
+/*Für Wortherkufttext*/
+.wortherkunft{
+    background-color: coral;
+    margin: 20px 0 0 10px;
+    width: 33%;
+
+}
+/*Ende styling von der zweiten Section*/
+
+
+
+
+/*Styling für den dritten Section*/
+/*Hintergrund und Ausrichtung vom dritte Section ist im styling für die zweite Section geschrieben*/
+/*Der Section title wurde genauso wie im zweiten Section definiert*/
+/*Styling für den TExt für history-infos*/
+
+.history-infos{
+    background-color: coral;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    line-height: 25px;
+
+}
+
+/*Abstand zwischen den Überschriften*/
+.history_h2{
+    color: rgb(252, 252, 252);
+    padding-bottom: 5px;
+}
+
+
+/*Abstand zwischen den Textabschnitten*/
+.history-infos p{
+    padding-bottom: 40px;
+}
+
+/* Styling und Ausrichtung von Bild_history*/
+.Bild_gesamt img{
+    border-radius: 10px;
+}
+
+.Bild_gesamt{
+    display: flex;
+    margin-right: 4%;
+    margin-left: 5%;
+
+}
+
+.Bild_gesamt_1, .Bild_gesamt_2{
+    background-color: coral;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin: 20px 15px 0 15px;
+    padding: 20px 25px 5px 25px;
+}
+
+.Bild_gesamt_1 img, .Bild_gesamt_2 img{
+    width: 100%;
+}
+/*Ende styling von der dritten section*/
+
+/*Anfang styling der vierten Section*/
+/*Hintergrund und Ausrichtung vom vierten Section ist im styling für die zweite Section geschrieben*/
+/*Der Section title wurde genauso wie im zweiten Section definiert*/
+
+/*Styling und Ausrichtung von Bild Sights 1*/
+
+.img_sgs1, .img_sgs2{
+    display: grid;
+    place-items: center;
+    padding: 20px 0 20px 0;
+    margin: 0 10px 0 10px;
+    border-radius: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.img_sgs1 img, .img_sgs2 img{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sgs1_txt, .sgs2_txt{
+    background-color: coral;
+    padding: 20px;
+    margin: 10px 30px 0 30px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+
+/*Styling und Ausrichtung von Bild Sights 2*/
+
+.img_sgs1 img{
+    width: 65%;
+}
+
+.img_sgs2{
+    margin-top: 50px;
+}
+
+.img_sgs2 img{
+    width: 65%;
+    margin-right: 2%;
+}
+
+/*Anfang Styling Footer section*/
+#footer {
+  background-color: goldenrod;
+  width: 101%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#footer .footer {
+  min-height: 200px;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.brand {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#footer h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#footer .social-icon {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+#footer .social-item {
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+}
+
+#footer .social-item .github {
+  width: 50px;
+}
+
+#footer p {
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+/* Ende vom Styling für die Footer Section*/
