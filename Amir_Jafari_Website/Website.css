@@ -104,8 +104,16 @@ nav{
   transition: all 0.3s ease;
 }
 
+/*Farbe der Links*/
+.link-color{
+    color: blue;
+}
 
-/*Wenn man den Display bis zu 768px zieht, dann passiert das:*/
+.link-color:visited{
+    color: lightblue;
+}
+
+/*Anfang Styling der Responsivität der Website:*/
 @media only screen and (max-width:768px){
     body{
         overflow-x: hidden;
@@ -150,7 +158,7 @@ nav{
         padding-left: 100px;
     }
 
-    /*Styling und Ausrichtung von Bild_gesamt*/    
+    /*Styling und Ausrichtung von Bild_gesamt*/   
     .Bild_gesamt{
         flex-direction: column;
         margin-right: 6%;
@@ -210,6 +218,7 @@ nav{
         flex-direction: column;
     }
 }
+/*Ende Stylng der Responsivität der Website*/
 
 /*Bürger Animation und Asurichtung*/
 .nav-active{
@@ -244,13 +253,19 @@ nav{
 /*Ende Styling Section 1(von Oben nach unten)*/
 
 
-
-
 /*Sytling für den zweiten Section*/
+
+/*Schriftgröße aller der divs list_thema, klima, wortherkunft, thema_history*/
+.list-thema, .klima p, .wortherkunft p, .thema_historie p{
+    font-size: 1.5rem;
+    line-height: 40px;
+
+}
 /*Hintergrund und Ausrichtung vom zweiten Section*/
 .thema_about, .thema_historie, .thema_sights {
     margin-top: -97px;
     background-color: bisque;
+    padding-bottom: 50px;
 }
 
 .section-title{
@@ -320,8 +335,6 @@ nav{
 /*Ende styling von der zweiten Section*/
 
 
-
-
 /*Styling für den dritten Section*/
 /*Hintergrund und Ausrichtung vom dritte Section ist im styling für die zweite Section geschrieben*/
 /*Der Section title wurde genauso wie im zweiten Section definiert*/
@@ -374,10 +387,10 @@ nav{
 }
 /*Ende styling von der dritten section*/
 
+
 /*Anfang styling der vierten Section*/
 /*Hintergrund und Ausrichtung vom vierten Section ist im styling für die zweite Section geschrieben*/
 /*Der Section title wurde genauso wie im zweiten Section definiert*/
-
 /*Styling und Ausrichtung von Bild Sights 1*/
 
 .img_sgs1, .img_sgs2{
@@ -426,7 +439,6 @@ nav{
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
 }
 
 #footer .footer {
@@ -473,3 +485,5 @@ nav{
   margin-bottom: 10px;
 }
 /* Ende vom Styling für die Footer Section*/
+
+/*In den Texten noch Verklingungen machen*/
